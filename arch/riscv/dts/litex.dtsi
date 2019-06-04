@@ -33,4 +33,13 @@
 		reg = <0xe0001800 0x18>;
 		status = "disabled";
 	};
+
+	mac0: mac@e0003800 {
+		compatible = "litex,liteeth";
+		reg = <0xe0003800 0x7c
+			0xe0003000 0x0a
+			0xb0000000 0x2000>;
+		tx-fifo-depth = <2>;
+		rx-fifo-depth = <2>;
+	};
 };
